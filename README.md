@@ -11,9 +11,9 @@ A tailwindcss plugin, that makes working with directions a breeze.
 ## Installation
 
 ```bash
-$ npm install tailwind-direction
+$ npm install --dev tailwind-direction
 # or
-$ yarn add tailwind-direction
+$ yarn add -D tailwind-direction
 ```
 
 ## Usage
