@@ -1,0 +1,17 @@
+export default () => ({
+  '[dir="ltr"] .origin-top-left': { 'transform-origin': 'top left' },
+  '[dir="ltr"] .origin-top-right': { 'transform-origin': 'top right' },
+  '[dir="ltr"] .origin-bottom-left': { 'transform-origin': 'bottom left' },
+  '[dir="ltr"] .origin-bottom-right': { 'transform-origin': 'bottom right' },
+  '[dir="ltr"] .origin-left': { 'transform-origin': 'left' },
+  '[dir="ltr"] .origin-right': { 'transform-origin': 'right' },
+  '[dir="rtl"] .origin-top-left': { 'transform-origin': 'top right' },
+  '[dir="rtl"] .origin-top-right': { 'transform-origin': 'top left' },
+  '[dir="rtl"] .origin-bottom-left': { 'transform-origin': 'bottom right' },
+  '[dir="rtl"] .origin-bottom-right': { 'transform-origin': 'bottom left' },
+  '[dir="rtl"] .origin-left': { 'transform-origin': 'right' },
+  '[dir="rtl"] .origin-right': { 'transform-origin': 'left' },
+  '.origin-bottom': { 'transform-origin': 'bottom' },
+  '.origin-top': { 'transform-origin': 'top' },
+  '.origin-center': { 'transform-origin': 'center' },
+});
