@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { categories, products } from './data';
+import { categories, products } from '../data';
 
 export default function Home() {
   const changeDir = () => {
