@@ -5,6 +5,7 @@
 
 A tailwindcss plugin, that makes working with directions a breeze.
 
+![Preview](https://user-images.githubusercontent.com/18403595/106312235-a509c800-6266-11eb-859b-1dd6edb671ee.gif)
 > Check out the [Live Example](https://tailwind-direction.vercel.app/) to try it for yourself.
 
 ## Installation
