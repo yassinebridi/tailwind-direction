@@ -61,3 +61,7 @@ Currently the affected core plugins are:
 ## Not Affected core plugins(But needs to be):
 - Inset (This is a big core plugin)
 - (Add new ones if you think others are missing)
+
+## You might like
+I created another plugin that makes working with bi-direction less painful with Next.js, check it out:
+https://github.com/yassinebridi/next-direction
