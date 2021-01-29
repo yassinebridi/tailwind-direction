@@ -1,1 +1,3 @@
-export { default as directionPlugin } from './plugin/index';
+import { directionPlugin } from './plugin';
+
+export default directionPlugin;

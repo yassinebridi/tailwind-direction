@@ -1,4 +1,3 @@
-import plugin from 'tailwindcss/plugin';
 import borderRadiusUtility from './utilities/border-radius.utility';
 import borderWidthUtility from './utilities/border-width.utility';
 import clearUtility from './utilities/clear.utility';
@@ -10,7 +9,7 @@ import spaceUtility from './utilities/space.utility';
 import textAlignUtility from './utilities/text-align.utility';
 import transformOriginUtility from './utilities/transform-origin.utility';
 
-export default plugin(({ addUtilities, theme, variants, e }) => {
+export const directionPlugin = ({ addUtilities, theme, variants, e }) => {
   addUtilities(paddingUtility(theme, e), variants('padding'));
   addUtilities(marginUtility(theme, e), variants('margin'));
   addUtilities(borderRadiusUtility(theme, e), variants('borderRadius'));
@@ -21,4 +20,4 @@ export default plugin(({ addUtilities, theme, variants, e }) => {
   addUtilities(floatUtility(), variants('float'));
   addUtilities(textAlignUtility(), variants('textAlign'));
   addUtilities(transformOriginUtility(), variants('transformOrigin'));
-});
+};
