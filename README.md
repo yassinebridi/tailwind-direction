@@ -1,4 +1,7 @@
-# tailwind-direction ![tailwind-direction minzip package size](https://img.shields.io/bundlephobia/minzip/tailwind-direction)
+# tailwind-direction 
+![tailwind-direction minzip package size](https://img.shields.io/bundlephobia/minzip/tailwind-direction)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Twitter Follow](https://img.shields.io/twitter/follow/yassinebridi.svg?style=social&label=Follow)](https://twitter.com/yassinebridi)
 
 A tailwindcss plugin, that makes working with directions a breeze.
 
