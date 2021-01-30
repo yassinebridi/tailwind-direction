@@ -1,15 +1,19 @@
 export const getClass = (classPrefix, key, e) => {
-  if (key === 'default') {
-    return `.${e(classPrefix)}`;
+  function asClass(name) {
+    return `.${e(name)}`;
+  }
+
+  if (key === 'DEFAULT') {
+    return asClass(classPrefix);
   }
 
   if (key === '-') {
-    return `.${e(`-${classPrefix}`)}`;
+    return asClass(`-${classPrefix}`);
   }
 
   if (key.startsWith('-')) {
-    return `.${e(`-${classPrefix}${key}`)}`;
+    return asClass(`-${classPrefix}${key}`);
   }
 
-  return `.${e(`${classPrefix}-${key}`)}`;
+  return asClass(`${classPrefix}-${key}`);
 };

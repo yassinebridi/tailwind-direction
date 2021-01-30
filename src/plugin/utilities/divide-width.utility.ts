@@ -20,8 +20,8 @@ export default (theme, e) => {
           e
         )} > :not([hidden]) ~ :not([hidden])`]: {
           '--tw-divide-y-reverse': '0',
-          borderTopWidth: `calc(${size} * var(--tw-divide-y-reverse))`,
-          borderBottomWidth: `calc(${size} * calc(1 - var(--tw-divide-y-reverse)))`,
+          borderTopWidth: `calc(${size} * calc(1 - var(--tw-divide-y-reverse)))`,
+          borderBottomWidth: `calc(${size} * var(--tw-divide-y-reverse))`,
         },
       };
     },
