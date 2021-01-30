@@ -46,6 +46,7 @@ There are two other know packages that solves the same problem:
 Currently the affected core plugins are:
 - padding
 - margin
+- inset
 - borderRadius
 - borderWidth
 - space
@@ -56,7 +57,6 @@ Currently the affected core plugins are:
 - transformOrigin
 
 ## Not Affected core plugins(But needs to be):
-- Inset (This is a big core plugin)
 - (Add new ones if you think others are missing)
 
 ## You might like
