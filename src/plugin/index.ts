@@ -3,6 +3,7 @@ import borderWidthUtility from './utilities/border-width.utility';
 import clearUtility from './utilities/clear.utility';
 import divideUtility from './utilities/divide-width.utility';
 import floatUtility from './utilities/float.utility';
+import insetUtility from './utilities/inset.utility';
 import marginUtility from './utilities/margin.utility';
 import paddingUtility from './utilities/padding.utility';
 import spaceUtility from './utilities/space.utility';
@@ -16,6 +17,7 @@ export const directionPlugin = ({ addUtilities, theme, variants, e }) => {
   addUtilities(borderWidthUtility(theme, e), variants('borderWidth'));
   addUtilities(spaceUtility(theme, e), variants('space'));
   addUtilities(divideUtility(theme, e), variants('divide'));
+  addUtilities(insetUtility(theme, e), variants('inset'));
   addUtilities(clearUtility(), variants('clear'));
   addUtilities(floatUtility(), variants('float'));
   addUtilities(textAlignUtility(), variants('textAlign'));
