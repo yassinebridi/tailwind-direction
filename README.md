@@ -22,6 +22,24 @@ plugins: [
   require('tailwind-direction').default,
 ],
 ```
+- Disable the following core tailwind plugins (otherwise, utilitites will produce both left and right css rules at the same time)
+
+```js
+corePlugins: {
+  borderRadius: false,
+  borderWidth: false,
+  clear: false,
+  divideWidth: false,
+  float: false,
+  inset: false,
+  margin: false,
+  padding: false,
+  space: false,
+  textAlign: false,
+  transformOrigin: false,
+},
+```
+
 - Change the html tag `dir` attribute:
 ```html
 <html dir="rtl">
