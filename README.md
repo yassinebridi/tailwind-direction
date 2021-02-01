@@ -31,6 +31,7 @@ corePlugins: {
   clear: false,
   divideWidth: false,
   float: false,
+  inset: false,
   margin: false,
   padding: false,
   space: false,
