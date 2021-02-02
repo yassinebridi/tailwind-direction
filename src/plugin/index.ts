@@ -23,3 +23,21 @@ export const directionPlugin = ({ addUtilities, theme, variants, e }) => {
   addUtilities(textAlignUtility(), variants('textAlign'));
   addUtilities(transformOriginUtility(), variants('transformOrigin'));
 };
+
+// tailwindcss preset config that disables core plugins we replace.
+// Learn more: https://tailwindcss.com/docs/presets
+export const tailwindPreset = {
+  corePlugins: {
+    borderRadius: false,
+    borderWidth: false,
+    clear: false,
+    divideWidth: false,
+    float: false,
+    inset: false,
+    margin: false,
+    padding: false,
+    space: false,
+    textAlign: false,
+    transformOrigin: false,
+  },
+};
