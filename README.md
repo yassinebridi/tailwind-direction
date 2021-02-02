@@ -3,6 +3,7 @@
 A tailwindcss plugin, that makes working with directions a breeze.
 
 ![Preview](https://user-images.githubusercontent.com/18403595/106312235-a509c800-6266-11eb-859b-1dd6edb671ee.gif)
+
 > Check out the [Live Example](https://tailwind-direction.vercel.app/) to try it for yourself.
 
 ## Installation
@@ -40,23 +41,28 @@ presets: [
 > merging](https://tailwindcss.com/docs/presets#core-plugins) and your
 > own configuration will have priority. If you must use the array syntax
 > you have to manually disable [all the core plugins we
-> replace](https://github.com/sa3dany/tailwind-direction/blob/main/README.md#affected-core-plugins).
+> replace](https://github.com/yassinebridi/tailwind-direction/blob/main/README.md#affected-core-plugins).
 
 - Change the html tag `dir` attribute:
+
 ```html
 <html dir="rtl">
   ...
 </html>
 ```
+
 `dir` can be:
+
 ```ts
-dir: "ltr" | "rtl"
+dir: 'ltr' | 'rtl';
 ```
 
 That's it, now your tailwind utilities works out of the box with directions in mind.
 
 ## Comparison
+
 There are two other know packages that solves the same problem:
+
 - [tailwindcss-dir](https://github.com/RonMelkhior/tailwindcss-dir): This package adds new variants `ltr`, `rtl`, that you have to add for every utility by hand.
 
 - [tailwindcss-rtl](https://github.com/20lives/tailwindcss-rtl): This package takes a different and a better approach, instead of adding new variants, you replace the targeted variants, like `mr`, `rounded-bl`, with it's direction corresponding utilites: `ms`, `rounded-be`
@@ -79,8 +85,10 @@ Currently the affected core plugins are:
 - transformOrigin
 
 ## Not Affected core plugins(But needs to be):
+
 - (Add new ones if you think others are missing)
 
 ## You might like
+
 I created another plugin that makes working with bi-direction less painful with Next.js, check it out:
 https://github.com/yassinebridi/next-direction
