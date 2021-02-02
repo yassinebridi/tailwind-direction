@@ -22,23 +22,25 @@ plugins: [
   require('tailwind-direction').default,
 ],
 ```
-- Disable the following core tailwind plugins (otherwise, utilitites will produce both left and right css rules at the same time)
+
+- Extend our configuration preset which disables the core tailwind
+  plugins we replace (otherwise, directional utilitites will produce
+  both left and right css rules at the same time).
 
 ```js
-corePlugins: {
-  borderRadius: false,
-  borderWidth: false,
-  clear: false,
-  divideWidth: false,
-  float: false,
-  inset: false,
-  margin: false,
-  padding: false,
-  space: false,
-  textAlign: false,
-  transformOrigin: false,
-},
+presets: [
+  require("tailwind-direction").configPreset,
+],
 ```
+
+> ⚠ **Warning:** If you are modifing `corePlugins` in your own
+> `tailwind.config.css`, you have to use the object syntax while
+> extending our configuration preset. This is because the array syntax
+> [does not support
+> merging](https://tailwindcss.com/docs/presets#core-plugins) and your
+> own configuration will have priority. If you must use the array syntax
+> you have to manually disable [all the core plugins we
+> replace](https://github.com/sa3dany/tailwind-direction/blob/main/README.md#affected-core-plugins).
 
 - Change the html tag `dir` attribute:
 ```html
@@ -60,17 +62,19 @@ There are two other know packages that solves the same problem:
 - [tailwindcss-rtl](https://github.com/20lives/tailwindcss-rtl): This package takes a different and a better approach, instead of adding new variants, you replace the targeted variants, like `mr`, `rounded-bl`, with it's direction corresponding utilites: `ms`, `rounded-be`
 - [tailwind-direction 🚀](https://github.com/yassinebridi/tailwind-direction): What this package does, is replacing the core utilites, with direction in mind ones, so you can just plug-in this packages and you are done, no refractoring proccess needed.
 
-## Affected core plugins:
+## Affected core plugins
+
 Currently the affected core plugins are:
-- padding
-- margin
-- inset
+
 - borderRadius
 - borderWidth
-- space
-- divide
 - clear
+- divide
 - float
+- inset
+- margin
+- padding
+- space
 - textAlign
 - transformOrigin
 
