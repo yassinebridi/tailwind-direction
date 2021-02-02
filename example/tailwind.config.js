@@ -12,16 +12,5 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
   ],
-  corePlugins: {
-    borderRadius: false,
-    borderWidth: false,
-    clear: false,
-    divideWidth: false,
-    float: false,
-    margin: false,
-    padding: false,
-    space: false,
-    textAlign: false,
-    transformOrigin: false,
-  },
+  presets: [require('tailwind-direction').configPreset],
 };
